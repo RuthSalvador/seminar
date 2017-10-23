@@ -1,0 +1,76 @@
+/*seteando nuestra página*/
+body {
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  color: #303030;
+  margin: 0;
+  padding: 0;
+}
+
+/*Clases reutilizables*/
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.box-content {
+  display: inline-block;
+  padding: 35px 0;
+  text-align: center;
+  width: 33%;
+}
+
+.box-header {
+  display: inline-block;
+}
+
+/*Estilos propios*/
+li {
+  display: inline;
+  list-style: none;
+}
+
+li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+li a:hover {
+  
+}
+
+.logo-home {
+  width: 200px;
+}
+
+nav {
+  float: right;
+  padding: 10px;
+}
+
+.logo-square {
+  width: 10%;
+}
+
+button {
+  background-color: #f6a831;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 10px;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-size: 60px;
+  color: #303030;
+}
+
+section, footer {
+  padding: 0 5%;
+  text-align: center;
+}
+
+footer {
+  background-color: #303030;
+  color: #ffffff;
+  padding: 5px;
+}
