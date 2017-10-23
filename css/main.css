@@ -27,6 +27,7 @@ body {
 li {
   display: inline;
   list-style: none;
+  padding: 10px;
 }
 
 li a {
@@ -35,16 +36,24 @@ li a {
 }
 
 li a:hover {
-  
+  color: #f6a831;
 }
 
 .logo-home {
   width: 200px;
 }
 
+header {
+  position: relative;
+}
+
 nav {
-  float: right;
-  padding: 10px;
+  position: absolute;
+  right: 5%;
+  top: 50%;/*se posiciona a la mitad del alto total de la caja padre <header>*/
+  transform: translateY(-50%); /*con esta propiedad transformamos un elemento,
+  para este caso; se usa translateY, porque quiero transladar en el eje Y 50% para arriba,
+  así quedaría <nav> centrado(si se sabe el alto de la caja, se colocaría la mitad del tamaño) */
 }
 
 .logo-square {
@@ -57,11 +66,23 @@ button {
   border-radius: 5px;
   color: #ffffff;
   padding: 10px;
+  outline: none; /*quita el borde azul del botón*/
+}
+
+button:hover {
+  background-color: #aa7425;
 }
 
 [class^="icon-"], [class*=" icon-"] {
   font-size: 60px;
   color: #303030;
+  transition: 1s; /*se coloca la transición acá y no en el hover, con el fin de que ésta funcione
+  al poner y quitar el mouse; si se coloca solo en la pseudo clase :hover, solo funcionaría
+  al posicionar el mouse, pero no al sacarlo. Pruébalo en clase!!*/
+}
+
+[class^="icon-"]:hover, [class*=" icon-"]:hover {
+  color: #f6a831;
 }
 
 section, footer {
